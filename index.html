@@ -1,114 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject Details</title>
+    <title>Academic Dashboard | Subjects</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <div class="subjects">
+    <header class="header">
+        <div class="tag">Spring 2026</div>
+        <h1>Academic Dashboard</h1>
+        <p>Your academic schedule at a glance</p>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-value">9</span>
+                <span class="stat-label">Subjects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">17</span>
+                <span class="stat-label">Credits</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="subjects">
         <div class="subject">
             <div class="abbreviation">COAL</div>
             <div class="details">
-                <h1 class="fullname">Computer Organization and Assembly Language</h1>
                 <div class="code">CS230</div>
-                <div class="credits">2</div>
-                <div class="faculty">Maj. Sikandar</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Computer Organization and Assembly Language</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>2 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Maj. Sikandar</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
-            <div class="abbreviation">COAL-Lab</div>
+            <div class="abbreviation">COAL Lab</div>
             <div class="details">
-                <h1 class="fullname">Computer Organization and Assembly Language Lab</h1>
                 <div class="code">CS231</div>
-                <div class="credits">1</div>
-                <div class="faculty">Maj. Sikandar</div>
-                <div class="room">VDI Lab 3</div>
+                <h1 class="fullname">Computer Organization and Assembly Language Lab</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>1 Credit</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Maj. Sikandar</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="VDI Lab 3">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: VDI Lab 3</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">SDA</div>
             <div class="details">
-                <h1 class="fullname">Software Design and Architecture</h1>
                 <div class="code">CS252</div>
-                <div class="credits">3</div>
-                <div class="faculty">Lec. Afeera</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Software Design and Architecture</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>3 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Lec. Afeera</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">SCD</div>
             <div class="details">
-                <h1 class="fullname">Software Construction and Development</h1>
                 <div class="code">CS254</div>
-                <div class="credits">2</div>
-                <div class="faculty">Lec. Javeria</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Software Construction and Development</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>2 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Lec. Javeria</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
-            <div class="abbreviation">SCD</div>
+            <div class="abbreviation">SCD Lab</div>
             <div class="details">
-                <h1 class="fullname">Software Construction and Development Lab</h1>
                 <div class="code">CS255</div>
-                <div class="credits">1</div>
-                <div class="faculty">LE Umair Khan</div>
-                <div class="room">CL-04</div>
+                <h1 class="fullname">Software Construction and Development Lab</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>1 Credit</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>LE Umair Khan</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="CL-04">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: CL-04</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">AP</div>
             <div class="details">
-                <h1 class="fullname">Applied Physics</h1>
                 <div class="code">GE250</div>
-                <div class="credits">2</div>
-                <div class="faculty">Dr. Khush Bakhat</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Applied Physics</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>2 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Dr. Khush Bakhat</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">AP Lab</div>
             <div class="details">
-                <h1 class="fullname">Applied Physics Lab</h1>
                 <div class="code">GE251</div>
-                <div class="credits">1</div>
-                <div class="faculty">Dr. Khush Bakhat</div>
-                <div class="room">AP Lab</div>
+                <h1 class="fullname">Applied Physics Lab</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>1 Credit</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>Dr. Khush Bakhat</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="AP Lab">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: AP Lab</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">Expo Writing</div>
             <div class="details">
-                <h1 class="fullname">Expository Writing</h1>
                 <div class="code">GE111</div>
-                <div class="credits">3</div>
-                <div class="faculty">TVF Mehwish</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Expository Writing</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>3 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>TVF Mehwish</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
+
         <div class="subject">
             <div class="abbreviation">IS</div>
             <div class="details">
-                <h1 class="fullname">Islamic Studies</h1>
                 <div class="code">GE230</div>
-                <div class="credits">2</div>
-                <div class="faculty">none</div>
-                <div class="room">801 A</div>
+                <h1 class="fullname">Islamic Studies</h1>
+                <div class="info-item">
+                    <i data-lucide="award" class="icon"></i>
+                    <span>2 Credits</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="user" class="icon"></i>
+                    <span>none</span>
+                </div>
+                <div class="info-item copy-btn" data-copy="801 A">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <span>Room: 801 A</span>
+                    <i data-lucide="copy" class="mini-icon"></i>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Student Academic Dashboard by <span class="developer">HEROxZAIN</span></p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
     <script>
-        let subjects = document.querySelectorAll('.subject');
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Handle card expansion
+        const subjects = document.querySelectorAll('.subject');
 
         subjects.forEach(subject => {
-            subject.addEventListener('click', () => {
-                let details = subject.querySelector('.details');
-                details.classList.toggle('active');
+            subject.addEventListener('click', (e) => {
+                const details = subject.querySelector('.details');
+
+                // If it's already active, we might want to close it, 
+                // but let's make it so only one is open at a time
+                const isActive = details.classList.contains('active');
+
+                if (isActive) {
+                    details.classList.remove('active');
+                } else {
+                    document.querySelectorAll('.details').forEach(d => d.classList.remove('active'));
+                    details.classList.add('active');
+                }
+            });
+        });
+
+        // Copy Feature
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Don't close/open the card
+                const text = btn.getAttribute('data-copy');
+                navigator.clipboard.writeText(text).then(() => {
+                    const toast = document.getElementById('toast');
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 2000);
+                });
+            });
+        });
+
+        // Prevent expansion when clicking inside details but NOT on a copy button
+        document.querySelectorAll('.details').forEach(detail => {
+            detail.addEventListener('click', (e) => {
+                e.stopPropagation();
             });
         });
     </script>
 </body>
+
 </html>
