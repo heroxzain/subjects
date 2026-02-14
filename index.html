@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="subjects">
@@ -98,5 +100,15 @@
             </div>
         </div>
     </div>
+    <script>
+        let subjects = document.querySelectorAll('.subject');
+
+        subjects.forEach(subject => {
+            subject.addEventListener('click', () => {
+                let details = subject.querySelector('.details');
+                details.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
